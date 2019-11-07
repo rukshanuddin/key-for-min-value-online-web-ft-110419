@@ -6,7 +6,7 @@
 def key_for_min_value(name_hash)
 
   name_hash.each_value do |val|
-     name = val if name.exists?
+     name = val if name == nil
      name = val if val < name
    end
   name_hash.each { |n, val| return n if val == name }
