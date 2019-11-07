@@ -6,6 +6,3 @@ def key_for_min_value(name_hash)
   name_hash.each_value { |val| name = val if val < name }
   name_hash[100]
 end
-
-
-
